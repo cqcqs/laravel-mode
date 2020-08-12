@@ -1,0 +1,2 @@
+# laravel-mode
+Laravel
