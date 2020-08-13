@@ -19,6 +19,11 @@ composer require cqcqs/laravel-mode
 数据传输层，`Controller` 与 `Service` 之间通信的数据传输
 
 ```$xslt
+# 生成 DTO
+php artisan make:dto PostDTO
+```
+
+```$xslt
 use App\DTO\PostDTO;
 
 $postDTO = new PostDTO([
@@ -36,12 +41,22 @@ $postDTO->setTitle($request->post('title'));
 业务逻辑层
 
 ```$xslt
+# 生成 Service
+php artisan make:service PostService
+```
+
+```$xslt
 return ServiceHelper::make('Api\\PostService')->store($postDTO);
 ```
 
 #### Repository
 
 数据映射层
+
+```$xslt
+# 生成 Repository
+php artisan make:repository PostRepository --model=App\Models\Post
+```
 
 ```$xslt
 use Cqcqs\Mode\Helpers\ResponseHelper;
