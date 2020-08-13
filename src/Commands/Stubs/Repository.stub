@@ -1,0 +1,14 @@
+<?php
+namespace DummyNamespace;
+
+use Cqcqs\Mode\Repository;
+use ModelNamespace;
+
+class DummyClass extends Repository
+{
+    public function model()
+    {
+        // todo Model Class
+        return ModelClass::class;
+    }
+}

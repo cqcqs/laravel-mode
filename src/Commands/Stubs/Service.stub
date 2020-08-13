@@ -1,0 +1,12 @@
+<?php
+namespace DummyNamespace;
+
+use Cqcqs\Mode\Service;
+
+class DummyClass extends Service
+{
+    public function __construct()
+    {
+        // todo
+    }
+}
