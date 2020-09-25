@@ -69,7 +69,7 @@ public function __construct(PostRepository $post)
 
 public function store(PostDTO $postDTO)
 {
-    $list = $this->post->create($postDTO->toArray());
+    $list = $this->post->insert($postDTO->toArray());
 
     return new ResponseHelper();
 }

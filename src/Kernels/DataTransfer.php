@@ -1,10 +1,14 @@
 <?php
-namespace Cqcqs\Mode;
+/**
+ * DTO PO数据传输抽象类
+ * @author Stephen
+ */
+namespace Cqcqs\Mode\Kernels;
 
 use Cqcqs\Mode\Helpers\StringHelper;
 use ReflectionClass;
 
-abstract class DTO
+abstract class DataTransfer
 {
     protected $hidden = ['hidden'];
 

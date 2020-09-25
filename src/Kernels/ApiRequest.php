@@ -1,5 +1,9 @@
 <?php
-namespace Cqcqs\Mode;
+/**
+ * Api接口Request验证
+ * @author Stephen
+ */
+namespace Cqcqs\Mode\Kernels;
 
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;

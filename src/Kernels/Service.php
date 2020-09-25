@@ -1,5 +1,9 @@
 <?php
-namespace Cqcqs\Mode;
+/**
+ * 业务逻辑层
+ * @author Stephen
+ */
+namespace Cqcqs\Mode\Kernels;
 
 abstract class Service
 {

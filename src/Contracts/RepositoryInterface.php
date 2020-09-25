@@ -1,19 +1,46 @@
 <?php
 namespace Cqcqs\Mode\Contracts;
 
+use Cqcqs\Mode\PO\FieldsPO;
+use Cqcqs\Mode\PO\FindListPO;
+use Cqcqs\Mode\PO\FindRowPO;
+
 interface RepositoryInterface
 {
-    public function all(array $columns=['*']);
+    /**
+     * @param FindListPO $findListPO
+     * @return mixed
+     */
+    public function all(FindListPO $findListPO);
 
-    public function paginate(int $perPage = 20, array $columns=['*']);
+    /**
+     * @param FindListPO $findListPO
+     * @return mixed
+     */
+    public function paginate(FindListPO $findListPO);
 
-    public function create(array $data);
+    /**
+     * @param FieldsPO $fieldsPO
+     * @return mixed
+     */
+    public function insert(FieldsPO $fieldsPO);
 
-    public function update(array $data, int $id);
+    /**
+     * @param FieldsPO $fieldsPO
+     * @return mixed
+     */
+    public function update(FieldsPO $fieldsPO);
 
-    public function delete(int $id);
+    /**
+     * @param FindRowPO $findRowPO
+     * @return mixed
+     */
+    public function delete(FindRowPO $findRowPO);
 
-    public function find(int $id, array $columns=['*']);
+    /**
+     * @param FindRowPO $findRowPO
+     * @return mixed
+     */
+    public function find(FindRowPO $findRowPO);
 
-    public function findBy(string $attribute, $value, array $columns=['*']);
 }
