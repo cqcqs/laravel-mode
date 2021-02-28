@@ -114,7 +114,7 @@ class ResponseHelper implements JsonSerializable
      * @param string|null $msg
      * @return ResponseHelper
      */
-    public static function success(?array $data = [], ?array $meta = [], ?string $msg = '') :ResponseHelper
+    public static function success(?array $data = [], ?array $meta = [], ?string $msg = 'SUCCESS') :ResponseHelper
     {
         $response = new self();
 
