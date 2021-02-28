@@ -107,5 +107,41 @@ class ResponseHelper implements JsonSerializable
         $this->meta = $meta;
     }
 
+    /**
+     * Response Success
+     * @param array|null $data
+     * @param array|null $meta
+     * @param string|null $msg
+     * @return ResponseHelper
+     */
+    public static function success(?array $data = [], ?array $meta = [], ?string $msg = '') :ResponseHelper
+    {
+        $response = new self();
+
+        $response->setData($data);
+        $response->setMeta($meta);
+        $response->setMsg($msg);
+
+        return $response;
+    }
+
+    /**
+     * Response Error
+     * @param string|null $msg
+     * @param int|null $code
+     * @param array|null $data
+     * @return ResponseHelper
+     */
+    public static function error(?string $msg = 'ERROR', ?int $code = 400, ?array $data = []) :ResponseHelper
+    {
+        $response = new self();
+
+        $response->setMsg($msg);
+        $response->setCode($code);
+        $response->setData($data);
+
+        return $response;
+    }
+
 
 }
