@@ -1,7 +1,7 @@
 <?php
 namespace Cqcqs\Mode\DTO;
 
-use Cqcqs\Mode\DTO;
+use Cqcqs\Mode\Kernels\DTO;
 
 class CommonDTO extends DTO
 {

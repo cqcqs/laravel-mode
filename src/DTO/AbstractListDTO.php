@@ -1,7 +1,7 @@
 <?php
 namespace Cqcqs\Mode\DTO;
 
-use Cqcqs\Mode\DTO;
+use Cqcqs\Mode\Kernels\DTO;
 
 abstract class AbstractListDTO extends DTO
 {
