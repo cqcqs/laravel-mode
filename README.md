@@ -5,6 +5,7 @@
 |  Laravel   | laravel-mode  |
 |  ----  | ----  |
 | 7.0  | V1.0 |
+| 8.0  | V1.0 |
 
 ### Install
 
