@@ -106,7 +106,10 @@ abstract class Repository implements RepositoryInterface
      */
     public function insert(FieldsPO $fieldsPO)
     {
-        return $this->model->insertGetId($fieldsPO->toArray());
+        $data = array_filter($fieldsPO->toArray(), function($value) {
+            return $value !== null;
+        });
+        return $this->model->insertGetId($data);
     }
 
     /**
@@ -116,7 +119,9 @@ abstract class Repository implements RepositoryInterface
      */
     public function update(FieldsPO $fieldsPO)
     {
-        $data = array_filter($fieldsPO->toArray());
+        $data = array_filter($fieldsPO->toArray(), function($value) {
+            return $value !== null;
+        });
         return $this->model->find(
             $fieldsPO->getId()
         )->update($data);
