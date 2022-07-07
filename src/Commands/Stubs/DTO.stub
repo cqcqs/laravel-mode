@@ -1,7 +1,7 @@
 <?php
 namespace DummyNamespace;
 
-use Cqcqs\Mode\DTO;
+use Cqcqs\Mode\Kernels\DTO;
 
 class DummyClass extends DTO
 {

@@ -1,7 +1,7 @@
 <?php
 namespace DummyNamespace;
 
-use Cqcqs\Mode\PO;
+use Cqcqs\Mode\Kernels\PO;
 
 class DummyClass extends PO
 {

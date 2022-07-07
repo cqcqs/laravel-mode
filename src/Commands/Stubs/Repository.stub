@@ -1,7 +1,7 @@
 <?php
 namespace DummyNamespace;
 
-use Cqcqs\Mode\Repository;
+use Cqcqs\Mode\Kernels\Repository;
 use ModelNamespace;
 
 class DummyClass extends Repository
