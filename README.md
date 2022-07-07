@@ -15,6 +15,12 @@ composer require cqcqs/laravel-mode
 
 ### Use
 
+#### Provider
+
+```php
+Cqcqs\Mode\ModeServiceProvider::class
+```
+
 #### DTO
 
 数据传输层，`Controller` 与 `Service` 之间通信的数据传输

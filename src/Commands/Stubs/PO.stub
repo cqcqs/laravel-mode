@@ -1,0 +1,9 @@
+<?php
+namespace DummyNamespace;
+
+use Cqcqs\Mode\PO;
+
+class DummyClass extends PO
+{
+
+}
